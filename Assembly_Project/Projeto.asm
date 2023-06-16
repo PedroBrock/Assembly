@@ -1,6 +1,3 @@
-; Pedro Luccas de Brito Brock
-; Matricula: 20200007985
-
 .686
 .model flat, stdcall
 option casemap :none
@@ -176,7 +173,7 @@ criptografarProc:
     push ebp          ; Subrotina da funcao
     mov ebp, esp      ; Subrotina da funcao
     xor ecx, ecx      ; INDICE do caractere atual
-    mov edx, [ebp+16] ; Armazena o endereço do buffer em edx
+    mov edx, [ebp+16] ; Armazena o endereÃ§o do buffer em edx
     mov eax, [ebp+8]  ; Armazena a chave em eax
     
 criptoBuffer: 
@@ -196,7 +193,7 @@ descriptografarProc:
     push ebp          ; Subrotina da funcao
     mov ebp, esp      ; Subrotina da funcao
     xor ecx, ecx      ; INDICE do caractere atual
-    mov edx, [ebp+16] ; Armazena o endereço do buffer em edx
+    mov edx, [ebp+16] ; Armazena o endereÃ§o do buffer em edx
     mov eax, [ebp+8]  ; Armazena a chave em eax
     
 descriptoBuffer: 
